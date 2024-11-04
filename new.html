@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="new.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Management</h1>
+      <form id="userForm">
+        <input type="hidden" id="userId" />
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+        <button type="submit" id="saveBtn">Save</button>
+        <button type="button" id="updateBtn" style="display: none">
+          Update
+        </button>
+        <button type="button" id="cancelBtn" style="display: none">
+          Cancel
+        </button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="userList">
+          <!-- User rows will be added here -->
+        </tbody>
+      </table>
+    </div>
+    <script src="new.js"></script>
+  </body>
+</html>
